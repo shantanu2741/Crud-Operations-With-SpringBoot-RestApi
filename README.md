@@ -45,30 +45,28 @@ Method	Endpoint	Description
 - GET	/users	Retrieve all users
 
 ##  Testing with Postman
-- 1. Create User
-Method: POST
-URL: http://localhost:8080/users
+### 1. Create User
+- Method: POST
+- URL: http://localhost:8080/users
+- Body: Select raw and choose JSON.
 
-Body: Select raw and choose JSON.
-
-Example:
+- Example:
 {
     "name": "Darshan",
     "address": "New York",
     "contact": "675867"
 }
 
-- 2. Retrieve User by ID
-Method: GET
-URL: http://localhost:8080/users/{id} (replace {id} with the actual user ID).
+### 2. Retrieve User by ID
+- Method: GET
+- URL: http://localhost:8080/users/{id} (replace {id} with the actual user ID).
 
-- 3. Update User
-Method: PUT
-URL: http://localhost:8080/users/{id}
+### 3. Update User
+- Method: PUT
+- URL: http://localhost:8080/users/{id}
+- Body: Select raw and choose JSON
 
-Body: Select raw and choose JSON
-
-Example:
+- Example:
 {
     "id": "1",
     "name": "Darshan",
@@ -76,10 +74,10 @@ Example:
     "contact": "675867"
 }
 
-- 4. Delete User
-Method: DELETE
-URL: http://localhost:8080/users/{id} (replace {id} with the actual user ID).
+### 4. Delete User
+- Method: DELETE
+- URL: http://localhost:8080/users/{id} (replace {id} with the actual user ID).
 
-- 5. Retrieve All Users
-Method: GET
-URL: http://localhost:8080/users
+### 5. Retrieve All Users
+- Method: GET
+- URL: http://localhost:8080/users
