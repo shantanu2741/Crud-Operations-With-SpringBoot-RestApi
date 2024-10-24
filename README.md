@@ -25,11 +25,11 @@ Open the project in your Eclipse IDE.
 
 ## Configure Database, If you're using MySQL for persistence, configure your database settings in application.properties:
 
-spring.datasource.url=jdbc:mysql://localhost:3306/your_database_name
-spring.datasource.username=your_username
-spring.datasource.password=your_password
-spring.jpa.hibernate.ddl-auto=update
-Build the Project Use Maven to build the project.
+- spring.datasource.url=jdbc:mysql://localhost:3306/your_database_name
+- spring.datasource.username=your_username
+- spring.datasource.password=your_password
+- spring.jpa.hibernate.ddl-auto=update
+- Build the Project Use Maven to build the project.
 
 bash
 Copy code
@@ -38,16 +38,17 @@ Run the Application Run the application. The server will start on http://localho
 
 ## API Endpoints
 Method	Endpoint	Description
-POST	/users	Create a new user
-GET	/users/{id}	Get user details by ID
-PUT	/users/{id}	Update user information
-DELETE	/users/{id}	Delete a user
-GET	/users	Retrieve all users
+- POST	/users	Create a new user
+- GET	/users/{id}	Get user details by ID
+- PUT	/users/{id}	Update user information
+- DELETE	/users/{id}	Delete a user
+- GET	/users	Retrieve all users
 
 ##  Testing with Postman
 - 1. Create User
 Method: POST
 URL: http://localhost:8080/users
+
 Body: Select raw and choose JSON.
 
 Example:
@@ -64,6 +65,7 @@ URL: http://localhost:8080/users/{id} (replace {id} with the actual user ID).
 - 3. Update User
 Method: PUT
 URL: http://localhost:8080/users/{id}
+
 Body: Select raw and choose JSON
 
 Example:
